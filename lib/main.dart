@@ -4,6 +4,7 @@ import 'package:driving_school/sqlite_database.dart';
 import 'package:flutter/material.dart';
 
 Future<void> main() async {
+  //Check users with button "Вхід"
   WidgetsFlutterBinding.ensureInitialized();
   await sqlite_database.sqliteDB;
   int? rememberMeStatus = await sqlite_database.sqliteDB.SelectRememberMeStatus();
